@@ -1,4 +1,4 @@
-{% set v = "1.17.0.1" %}
+{% set v = "1.17.0.2" %}
 
 package:
   name: pandoc
@@ -7,13 +7,13 @@ package:
 source:
   fn:   pandoc-{{ v }}-amd64.deb                                                            # [linux64]
   url:  https://github.com/jgm/pandoc/releases/download/{{ v }}/pandoc-{{ v }}-1-amd64.deb  # [linux64]
-  md5:  827e87a4188d0ac49095835a3bf0a3c6                                                    # [linux64]
+  md5:  66c19c0d0b4908385e0a9318359b8eb0                                                    # [linux64]
   fn:   pandoc-{{ v }}.pkg                                                                  # [osx]
   url:  https://github.com/jgm/pandoc/releases/download/{{ v }}/pandoc-{{ v }}-osx.pkg      # [osx]
-  md5:  1321e443caf6a5a7b52098ebc5151090                                                    # [osx]
+  md5:  eddcd678bbb33b809755e62646ceee00                                                    # [osx]
   fn:   pandoc-{{ v }}-windows.msi                                                          # [win]
   url:  https://github.com/jgm/pandoc/releases/download/{{ v }}/pandoc-{{ v }}-windows.msi  # [win]
-  md5:  ea2bb7f6c65012a865b33fe76f87e6f8                                                    # [win]
+  md5:  5b81d93eb97e0f66bed4fe059ad7f67d                                                    # [win]
 
 requirements:
   run:
@@ -33,3 +33,4 @@ about:
 extra:
   recipe-maintainers:
     - janschulz
+    - ocefpaf
