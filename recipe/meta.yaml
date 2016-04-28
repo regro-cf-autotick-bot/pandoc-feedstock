@@ -15,10 +15,13 @@ source:
   url:  https://github.com/jgm/pandoc/releases/download/{{ v }}/pandoc-{{ v }}-windows.msi  # [win]
   md5:  5b81d93eb97e0f66bed4fe059ad7f67d                                                    # [win]
 
+build:
+    number: 0
+
 requirements:
   run:
-    - gmp               # [linux64]
-    - zlib              # [linux64]
+    - gmp  # [linux64]
+    - zlib 1.2*  # [linux64]
 
 test:
   commands:
