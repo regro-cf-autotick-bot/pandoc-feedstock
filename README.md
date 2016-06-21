@@ -3,7 +3,7 @@ About pandoc
 
 Home: http://johnmacfarlane.net/pandoc/
 
-Package license: GPL
+Package license: GPL-2.0
 
 Feedstock license: BSD 3-Clause
 
