@@ -1,39 +1,39 @@
-{% set v = "1.17.0.2" %}
+{% set version = "1.17.1" %}
 
 package:
-  name: pandoc
-  version: {{ v }}
+    name: pandoc
+    version: {{ version }}
 
 source:
-  fn:   pandoc-{{ v }}-amd64.deb                                                            # [linux64]
-  url:  https://github.com/jgm/pandoc/releases/download/{{ v }}/pandoc-{{ v }}-1-amd64.deb  # [linux64]
-  md5:  66c19c0d0b4908385e0a9318359b8eb0                                                    # [linux64]
-  fn:   pandoc-{{ v }}.pkg                                                                  # [osx]
-  url:  https://github.com/jgm/pandoc/releases/download/{{ v }}/pandoc-{{ v }}-osx.pkg      # [osx]
-  md5:  eddcd678bbb33b809755e62646ceee00                                                    # [osx]
-  fn:   pandoc-{{ v }}-windows.msi                                                          # [win]
-  url:  https://github.com/jgm/pandoc/releases/download/{{ v }}/pandoc-{{ v }}-windows.msi  # [win]
-  md5:  5b81d93eb97e0f66bed4fe059ad7f67d                                                    # [win]
+    fn: pandoc-{{ version }}-amd64.deb                                                                     # [linux64]
+    url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-2-amd64.deb          # [linux64]
+    sha256: b65781a751751ca503b9eecf9f383e16d8771451d4ddb0df20750ab2707ff076                               # [linux64]
+    fn: pandoc-{{ version }}.pkg                                                                           # [osx]
+    url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-1-osx.pkg      # [osx]
+    sha256: d3890cc69bf206989a9af8a6af099ed3a83385320df235e51cf35d0777fdb3a0                               # [osx]
+    fn: pandoc-{{ version }}-windows.msi                                                                   # [win]
+    url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-1-windows.msi  # [win]
+    sha256: ff1559eeb63063ba9a0013910de764c4ef99ddd95ee09c128847d3b2c2dc2c9b                               # [win]
 
 build:
     number: 0
 
 requirements:
-  run:
-    - gmp  # [linux64]
-    - zlib 1.2*  # [linux64]
+    run:
+        - gmp  # [linux64]
+        - zlib 1.2.*  # [linux64]
 
 test:
-  commands:
-    - pandoc --help
-    - pandoc --version
+    commands:
+        - pandoc --help
+        - pandoc --version
 
 about:
-  home: http://johnmacfarlane.net/pandoc/
-  license: GPL
-  summary: Universal markup converter (repackaged binaries)
+    home: http://johnmacfarlane.net/pandoc/
+    license: GPL-2.0
+    summary: Universal markup converter (repackaged binaries)
 
 extra:
-  recipe-maintainers:
-    - janschulz
-    - ocefpaf
+    recipe-maintainers:
+        - janschulz
+        - ocefpaf
