@@ -7,7 +7,7 @@ Package license: GPL-2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: Universal markup converter (repackaged binaries)
+Summary: Universal markup converter (repackaged binaries).
 
 
 
@@ -31,7 +31,6 @@ It is possible to list all of the versions of `pandoc` available on your platfor
 ```
 conda search pandoc --channel conda-forge
 ```
-
 
 
 About conda-forge
