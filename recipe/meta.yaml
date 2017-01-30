@@ -1,4 +1,4 @@
-{% set version = "1.19.1" %}
+{% set version = "1.19.2" %}
 
 package:
   name: pandoc
@@ -7,13 +7,13 @@ package:
 source:
   fn: pandoc-{{ version }}-amd64.deb                                                                     # [linux64]
   url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-1-amd64.deb    # [linux64]
-  sha256: cb31d29ee8a34aa2fed135c75dd99748ae814f3008d82b6cdb5fd35aec3e7c72                               # [linux64]
+  sha256: 308fa08d427a2b49c6b4d1558884c8fad2f07684997232b4818b98cc7ca14392                               # [linux64]
   fn: pandoc-{{ version }}.pkg                                                                           # [osx]
   url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-osx.pkg        # [osx]
-  sha256: 6b055e43d8b0d7f632150c3d82d02fc5ed6127f41e69471c79bde475e86e4f0b                               # [osx]
+  sha256: ebf8af76d94a87803d938e18d1b6f2da472e610a73f48838932a808ca2593239                               # [osx]
   fn: pandoc-{{ version }}-windows.msi                                                                   # [win]
   url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-windows.msi    # [win]
-  sha256: 01965414eb03a66b9d49c334e7e635b90518005530f9c8d619c30200403b6a19                               # [win]
+  sha256: 63d26519adc2a86f71160058b8a03f2a4911064ef4b4ae3d3900c413e81beac0                               # [win]
 
 build:
    number: 0
