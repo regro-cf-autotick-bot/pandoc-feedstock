@@ -2,7 +2,7 @@
 
 if [ $(uname) == Linux ]; then
     ar vx pandoc*.deb
-    tar -xzvf data.tar.gz
+    tar --extract --xz --verbose --file=data.tar.xz
     mkdir -p $PREFIX/bin
     mv usr/bin/* $PREFIX/bin
 fi

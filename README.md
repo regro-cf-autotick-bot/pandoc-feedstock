@@ -1,7 +1,7 @@
 About pandoc
 ============
 
-Home: http://johnmacfarlane.net/pandoc/
+Home: http://pandoc.org/
 
 Package license: GPL-2.0
 
