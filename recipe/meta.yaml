@@ -16,12 +16,12 @@ source:
   sha256: 0b1d27bf68fbaf7a0454c91590ad5e2a044ab44b73917d9fba832ffa7f7127d2                               # [win]
 
 build:
-   number: 0
+   number: 1
 
 requirements:
   run:
     - gmp  # [linux64]
-    - zlib 1.2.*  # [linux64]
+    - zlib 1.2.11  # [linux64]
 
 test:
   commands:
