@@ -9,7 +9,7 @@ fi
 
 
 if [ $(uname) == Darwin ]; then
-    pkgutil --expand pandoc-$PKG_VERSION.pkg pandoc
+    pkgutil --expand pandoc-$PKG_VERSION-macOS.pkg pandoc
     cpio -i -I pandoc/pandoc.pkg/Payload
     mkdir -p $PREFIX/bin
     cp usr/local/bin/* $PREFIX/bin/
