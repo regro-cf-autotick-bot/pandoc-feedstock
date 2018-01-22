@@ -1,4 +1,4 @@
-{% set version = "2.1" %}
+{% set version = "2.1.1" %}
 
 package:
   name: pandoc
@@ -6,13 +6,13 @@ package:
 
 source:
   url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-1-amd64.deb    # [linux64]
-  sha256: f21bceb276b9e66e03dccad5066738b014e1bfdc276d8df93bf806e530939713                               # [linux64]
+  sha256: d53a5cea345b3ad6ecaab1f1867cbd0352b88df5df360e4ab00e24624fa56ae9                               # [linux64]
 
   url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-macOS.pkg      # [osx]
-  sha256: 5a429493f7e5c304245609343bbfcfe9b8f143ff08126a1637b15a528951e1f2                               # [osx]
+  sha256: e45d9a770abb6c959bb209be5fc74ccb5020ddc276aab014f8ab319d42bb26cf                               # [osx]
 
   url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-windows.msi    # [win]
-  sha256: 3bbd981bd335c6714704ea3bc2007abdc526fe1803f18870e42991baae29cc1d                               # [win]
+  sha256: 0c0b4ce8e86ca4c66a86bd40faf75b2c03b1b5aaa27b4d369e2b3dec111c5210                               # [win]
 
 build:
    number: 0
@@ -34,6 +34,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - janschulz
+    - jankatins
     - ocefpaf
     - dhimmel
