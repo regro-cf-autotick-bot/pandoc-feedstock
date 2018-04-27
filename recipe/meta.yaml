@@ -11,7 +11,7 @@ source:
   url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-macOS.pkg      # [osx]
   sha256: 8ae79b673485d76bd5a1f4b65a6bf5bf11d2f817420990e6cb9717387efadf7b                               # [osx]
 
-  url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-windows--x86_64.msi  # [win]
+  url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-windows-x86_64.msi  # [win]
   sha256: c2e582b03041a15dae7d4a9af450c5626db7d27ad4ab7f2cb6cd1d86d22a8149                               # [win]
 
 build:
