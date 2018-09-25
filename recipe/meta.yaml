@@ -12,7 +12,7 @@ source:
   sha256: 2ed3aebf95e5f206639913736d2257d01f19bcf4289f1b4f8e7e1de9096673f7  # [osx]
 
   fn: pandoc-{{ version }}-windows-x86_64.msi  # [win]
-  url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-1-windows-x86_64.msi  # [win]
+  url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-windows-x86_64.msi  # [win]
   sha256: 11355b3bfb337fb1d9896a8dc4219ce44d2a0fbfc7b92820c879b7a1e68c3705  # [win]
 
 build:
