@@ -1,4 +1,4 @@
-{% set version = "2.2.2" %}
+{% set version = "2.3" %}
 
 package:
   name: pandoc
@@ -6,17 +6,17 @@ package:
 
 source:
   url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-1-amd64.deb  # [linux64]
-  sha256: 7d74d96f231960fde9a611803dd9b5047128d9f264062ec02c38c4a3dbf520e2  # [linux64]
+  sha256: 77cc8aa981a333975f9167686feb201dff4123dcfc813dab5bcdfc5da4bb89f2  # [linux64]
 
   url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-macOS.pkg  # [osx]
-  sha256: a55c91f0bbb59246ac0ec841d68ac00b70e7e5a7af3f15c4fb25338fcfe1f0a7  # [osx]
+  sha256: 2ed3aebf95e5f206639913736d2257d01f19bcf4289f1b4f8e7e1de9096673f7  # [osx]
 
   fn: pandoc-{{ version }}-windows-x86_64.msi  # [win]
-  url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-1-windows-x86_64.msi  # [win]
-  sha256: 76600c1e1f1096fbc871fe8f158355a1bbd303034ff33bec5117c9c4273fb715  # [win]
+  url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-windows-x86_64.msi  # [win]
+  sha256: 11355b3bfb337fb1d9896a8dc4219ce44d2a0fbfc7b92820c879b7a1e68c3705  # [win]
 
 build:
-   number: 1
+   number: 0
 
 requirements:
   run:
@@ -31,7 +31,7 @@ test:
 about:
   home: http://pandoc.org/
   license: GPL-2.0
-  summary: 'Universal markup converter (repackaged binaries).'
+  summary: 'Universal markup converter (repackaged binaries)'
 
 extra:
   recipe-maintainers:
