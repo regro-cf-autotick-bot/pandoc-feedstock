@@ -14,8 +14,7 @@ Summary: Universal markup converter (repackaged binaries)
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pandoc-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pandoc-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/pandoc-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pandoc-feedstock)
+[![Linux,OSX](https://img.shields.io/circleci/project/github/conda-forge/pandoc-feedstock/master.svg?label=Linux,OSX)](https://circleci.com/gh/conda-forge/pandoc-feedstock)
 [![Windows](https://img.shields.io/appveyor/ci/conda-forge/pandoc-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pandoc-feedstock/branch/master)
 
 Current release info
