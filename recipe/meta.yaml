@@ -33,6 +33,8 @@ test:
 about:
   home: http://pandoc.org/
   license: GPL-2.0
+  license_family: GPL
+  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: 'Universal markup converter (repackaged binaries)'
 
 extra:
