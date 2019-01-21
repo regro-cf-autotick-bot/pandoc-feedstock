@@ -18,7 +18,7 @@ source:
   sha256: a22fe0f582c4b11e345c527c3fd066eaef3e7cadb86074a1bce6ddb75a8e243a  # [win]
 
 build:
-   number: 0
+   number: 1
 
 requirements:
   run:
@@ -33,6 +33,8 @@ test:
 about:
   home: http://pandoc.org/
   license: GPL-2.0
+  license_family: GPL
+  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: 'Universal markup converter (repackaged binaries)'
 
 extra:
