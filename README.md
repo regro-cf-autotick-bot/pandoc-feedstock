@@ -115,5 +115,6 @@ Feedstock Maintainers
 
 * [@dhimmel](https://github.com/dhimmel/)
 * [@jankatins](https://github.com/jankatins/)
+* [@kiwi0fruit](https://github.com/kiwi0fruit/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
