@@ -18,12 +18,7 @@ source:
   sha256: 63338ebca7daf07f9492dc70fce4eac5e18ed26ec7c22c964603f63114314154  # [win]
 
 build:
-   number: 0
-
-requirements:
-  run:
-    - gmp  # [linux64]
-    - zlib  # [linux64]
+   number: 1
 
 test:
   commands:
@@ -42,3 +37,4 @@ extra:
     - jankatins
     - ocefpaf
     - dhimmel
+    - kiwi0fruit
