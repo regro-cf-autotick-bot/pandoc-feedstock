@@ -2,7 +2,8 @@
 
 package:
   name: pandoc
-  version: {{ version }}
+  version: {{ version }}  # [not (ppc64le or aarch64)]
+  version: 2.5            # [ppc64le or aarch64]
 
 source:
   fn: pandoc.deb  # [linux]
@@ -17,13 +18,17 @@ source:
   url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-windows-x86_64.msi  # [win]
   sha256: 63338ebca7daf07f9492dc70fce4eac5e18ed26ec7c22c964603f63114314154  # [win]
 
+  url: https://rpmfind.net/linux/opensuse/ports/aarch64/tumbleweed/repo/oss/aarch64/pandoc-2.5-3.1.aarch64.rpm  # [aarch64]
+  
+  url: https://rpmfind.net/linux/opensuse/ports/ppc/tumbleweed/repo/oss/ppc64le/pandoc-2.5-3.2.ppc64le.rpm  # [ppc64le]
+
 build:
    number: 0
 
 requirements:
   run:
     - gmp  # [linux64]
-    - zlib  # [linux64]
+    - zlib  # [linux]
 
 test:
   commands:
