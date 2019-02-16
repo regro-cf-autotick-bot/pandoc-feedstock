@@ -23,12 +23,7 @@ source:
   url: https://rpmfind.net/linux/opensuse/ports/ppc/tumbleweed/repo/oss/ppc64le/pandoc-2.5-3.2.ppc64le.rpm  # [ppc64le]
 
 build:
-   number: 0
-
-requirements:
-  run:
-    - gmp  # [linux64]
-    - zlib  # [linux]
+   number: 1
 
 test:
   commands:
@@ -47,3 +42,4 @@ extra:
     - jankatins
     - ocefpaf
     - dhimmel
+    - kiwi0fruit
